@@ -1,0 +1,6 @@
+spec_version: "0.1.0"
+name: quantum-circuit-optimizer
+version: "0.1.0"
+description: "Autonomous quantum compilation assistant optimizing unitary circuit decompositions, qubit topology mapping, and error-mitigated gate synthesis."
+model:
+  preferred: llama-3.3-70b-versatile

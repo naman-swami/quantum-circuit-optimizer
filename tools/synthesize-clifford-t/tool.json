@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "synthesize-clifford-t",
+  "description": "Decompose arbitrary unitary rotation gates into canonical single-qubit gates and T-depth minimized sequences.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "unitary_matrix": {
+        "type": "string"
+      },
+      "epsilon_precision": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "unitary_matrix"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "optimize-swap-routing",
+  "description": "Compute minimal SWAP insertion schedule for a directed coupling graph architecture.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "qasm_circuit": {
+        "type": "string"
+      },
+      "coupling_map": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "qasm_circuit",
+      "coupling_map"
+    ]
+  }
+}
