@@ -1,0 +1,28 @@
+{
+  "name": "quantum-circuit-optimizer",
+  "instructions": "You are quantum-circuit-optimizer. Map abstract OpenQASM quantum algorithms to physical NISQ heavy-hex superconducting architectures with minimal CNOT depth and SWAP overhead.",
+  "model": "gpt-4o",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "synthesize-clifford-t",
+        "description": "Decompose arbitrary unitary rotation gates into canonical single-qubit gates and T-depth minimized sequences."
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "optimize-swap-routing",
+        "description": "Compute minimal SWAP insertion schedule for a directed coupling graph architecture."
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "compute-circuit-fidelity",
+        "description": "Estimate total circuit quantum volume and randomized benchmarking survival probability."
+      }
+    }
+  ]
+}

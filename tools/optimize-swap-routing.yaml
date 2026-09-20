@@ -1,0 +1,31 @@
+annotations:
+  cost: none
+  read_only: true
+  requires_confirmation: false
+description: Compute minimal SWAP insertion schedule for a directed coupling graph
+  architecture.
+input_schema:
+  additionalProperties: false
+  properties:
+    coupling_map:
+      type: string
+    qasm_circuit:
+      type: string
+  required:
+  - qasm_circuit
+  - coupling_map
+  type: object
+name: optimize-swap-routing
+output_schema:
+  additionalProperties: false
+  properties:
+    confidence:
+      type: number
+    data:
+      type: string
+    status:
+      type: string
+  required:
+  - status
+  - data
+  type: object
