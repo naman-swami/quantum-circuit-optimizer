@@ -1,0 +1,4 @@
+{
+  "default_passes": ["PeepholeCancellationPass", "NISQFidelityEstimator"],
+  "target_fidelity_threshold": 0.95
+}

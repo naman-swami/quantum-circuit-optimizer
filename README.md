@@ -55,7 +55,7 @@ quantum-circuit-optimizer/
 │   └── nisq_noise_model.md          # Noise physics formulation
 ├── tests/
 │   └── test_agent.py                # Compiler pass verification tests
-├── main.py                          # Compilation CLI
+├── compile.py                          # Compilation CLI
 └── requirements.txt
 ```
 
@@ -66,5 +66,5 @@ quantum-circuit-optimizer/
 pytest tests/ -v
 
 # Optimize benchmark QAOA circuit
-python main.py --demo
+python compile.py --demo
 ```
